@@ -1,3 +1,5 @@
 node_modules
-.gitigmore
+.gitignore
 .dockerignore
+.git
+docker-compose
