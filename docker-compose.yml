@@ -14,8 +14,8 @@ services:
   mongo-app:
     image: mongo
     environment:
-      -MONGO_INITDB_ROOT_USERNAME=shashi
-      -MONGO_INITDB_ROOT_PASSWORD=shashi
+      - MONGO_INITDB_ROOT_USERNAME=shashi
+      - MONGO_INITDB_ROOT_PASSWORD=shashi
   
 volumes:
   mongo-db:
