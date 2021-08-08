@@ -12,6 +12,12 @@ services:
       - NODE_ENV=development
       - MONGO_USER=shashi
       - MONGO_PASSWORD=shashi
+      - SESSION_SECRET=secret
     command: npm run dev
+
+  mongo-app:
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=shashi
+      - MONGO_INITDB_ROOT_PASSWORD=shashi
 
   

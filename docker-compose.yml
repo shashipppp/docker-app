@@ -16,6 +16,11 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=shashi
       - MONGO_INITDB_ROOT_PASSWORD=shashi
+    volumes:
+      - mongo-db:/data/db
+
+  redis-app:
+    image: redis
   
 volumes:
   mongo-db:
