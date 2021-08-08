@@ -47,7 +47,7 @@ exports.login = async (req, res) => {
 };
 
 exports.protect = async (req, res, next) => {
-  const { user } = res.session;
+  const { user } = res.session || {};
   if (!user) return Promise.reject('Unauthorized!');
 
   req.user = user;
