@@ -37,7 +37,7 @@ app.use(session({
   }
 }));
 app.use(express.json());
-app.use('/', (req, res) => {
+app.use('/api/v1/test', (req, res) => {
   res.send('Hi There....');
 });
 
